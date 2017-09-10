@@ -28,7 +28,7 @@ Which units preset should be used?
 3 = RHS USAF, RHS AFRF and BWMod.
 4 = RHS USAF, RHS AFRF and Project OPFOR (Takistan)
 5 = 3cbBAF, RHS USAF and RHS AFRF. */
-KP_liberation_preset = 3;
+KP_liberation_preset = 0;
 
 /* Which arsenal preset should be used?
 0 = Use the default blacklist method (defined below).
