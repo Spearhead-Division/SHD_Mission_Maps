@@ -1,1 +1,3 @@
-# SHD_kp_liberation.xcam_taunus
+# Spearhead-Division Clanmap
+## KB Liberation auf der Arma 3 Karte X-Cam Taunus
+
