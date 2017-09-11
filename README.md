@@ -1,6 +1,6 @@
 ## Spearhead-Division Clanmap
 
-### SHD_Liberation auf der X-Cam Taunus Karte
+### SHD_Liberation_Taunus auf der X-Cam Taunus Karte
 
 ### Verwendete Mission
 
