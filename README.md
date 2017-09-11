@@ -23,8 +23,8 @@
 
 ### ArmaSync
 
-- reposetorie Link:
-  -
+- repository Link:
+  - ftp:\\spearhead-divison.de
  
 ### Teamspeak Server
 
