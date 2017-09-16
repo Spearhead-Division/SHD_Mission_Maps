@@ -92,6 +92,7 @@ light_vehicles = [
 ];
 
 heavy_vehicles = [
+	["Redd_Marder_1A5_Flecktarn",250,200,150],
 	["rhsusf_m113_usarmy",200,40,100],									//M113A3 (M2)
 	["rhsusf_m113_usarmy_MK19",200,60,100],								//M113A3 (Mk19)
 	["RHS_M2A2_BUSKI_WD",300,200,150],									//M2A2ODS (Busk I)
