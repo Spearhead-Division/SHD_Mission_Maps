@@ -138,6 +138,7 @@ air_vehicles = [
 ];
 
 static_vehicles = [
+	["B_Redd_Milan_Static",50,100,0],
 	["RHS_M2StaticMG_MiniTripod_WD",25,40,0],							//Mk2 HMG .50
 	["RHS_M2StaticMG_WD",25,40,0],										//Mk2 HMG .50 (Raised)
 	["RHS_MK19_TriPod_WD",25,60,0],										//Mk19 GMG 20mm
