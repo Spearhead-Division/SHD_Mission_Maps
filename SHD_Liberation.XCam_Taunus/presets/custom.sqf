@@ -63,30 +63,32 @@ infantry_units = [
 light_vehicles = [
 	["B_Quadbike_01_F",50,0,25],										//Quad Bike
 	["rhsusf_m1025_w",100,0,50],										//M1025A2
-	["rhsusf_m1025_w_m2",100,40,50],									//M1025A2 (M2)
-	["rhsusf_m1025_w_mk19",100,60,50],									//M1025A2 (Mk19)
+	["rhsusf_m1025_w_m2",100,50,50],									//M1025A2 (M2)
+	["rhsusf_m1025_w_mk19",100,80,50],									//M1025A2 (Mk19)
 	["rhsusf_m998_w_2dr_fulltop",100,0,50],								//M1097A2 (2D)
 	["rhsusf_m998_w_2dr_halftop",100,0,50],								//M1097A2 (2D / open back)
 	["KGB_B_MRAP_03_F",100,0,50],										//Strider
-	["KGB_B_MRAP_03_hmg_F",100,40,50],									//Strider (HMG) 
-	["KGB_B_MRAP_03_gmg_F",100,60,50],									//Strider (GMG)
+	["KGB_B_MRAP_03_hmg_F",100,50,50],									//Strider (HMG) 
+	["KGB_B_MRAP_03_gmg_F",100,80,50],									//Strider (GMG)
 	["rhsusf_m1025_w",100,0,50],										//M1025A2
-	["rhsusf_m1025_w_m2",100,40,50],									//M1025A2 (M2)
-	["rhsusf_m1025_w_mk19",100,60,50],									//M1025A2 (Mk19)
+	["rhsusf_m1025_w_m2",100,50,50],									//M1025A2 (M2)
+	["rhsusf_m1025_w_mk19",100,80,50],									//M1025A2 (Mk19)
 	["rhsusf_m998_w_2dr_fulltop",100,0,50],								//M1097A2 (2D)
 	["rhsusf_m998_w_2dr_halftop",100,0,50],								//M1097A2 (2D / open back)
 	["BWA3_Eagle_Fleck",100,0,50],										//Eagle IV
-	["BWA3_Eagle_FLW100_Fleck",100,100,50],								//Eagle IV (FLW 100)
+	["BWA3_Eagle_FLW100_Fleck",100,50,50],								//Eagle IV (FLW 100)
 	["BW_LKW_Transport_offen_fleck",125,0,75],							//BW LKW Transport offen
 	["BW_LKW_Transport_Fleck",125,0,75],								//BW LKW Transport geschlossen
+	["rhsusf_M1237_M2_usarmy_wd",125,50,75],
+	["rhsusf_M1237_Mk19_usarmy_wd",125,80,75],
 	["rhsusf_M1083A1P2_wd_fmtv_usarmy",125,0,75],						//M1083A1P2 (covered infantry truck)
 	["rhsusf_M1083A1P2_wd_open_fmtv_usarmy",125,0,75],					//M1083A1P2 (open infantry truck)
 	["rhsusf_M977A4_BKIT_usarmy_wd",125,0,75],							//M977A4 BKIT (cargo truck)
-	["rhsusf_M977A4_BKIT_M2_usarmy_wd",125,40,75],						//M977A4 BKIT (cargo truck with HMG)
+	["rhsusf_M977A4_BKIT_M2_usarmy_wd",125,50,75],						//M977A4 BKIT (cargo truck with HMG)
 	["B_UGV_01_F",150,0,50],											//UGV Stomper
 	["B_UGV_01_rcws_F",150,40,50],										//UGV Stomper (RCWS)
 	["B_Boat_Transport_01_F",100,0,25],									//Assault Boat
-	["B_Boat_Armed_01_minigun_F",200,80,75],							//Speedboat Minigun
+	["B_Boat_Armed_01_minigun_F",200,100,75],							//Speedboat Minigun
 	["rhsusf_mkvsoc",250,200,100],										//Mk.V SOCOM
 	["B_SDV_01_F",150,0,50]												//SDV
 ];
