@@ -179,6 +179,9 @@ blacklisted_from_arsenal = [
 	"rhs_uniform_emr_patchless",
 	"rhs_uniform_msv_emr",
 	"rhs_uniform_vdv_emr",
+	"rhs_uniform_rva_flora",
+	"rhs_uniform_vmf_flora",
+	"rhs_uniform_vmf_flora_subdued",
 	"rhs_uniform_flora_patchless",
 	"rhs_uniform_flora_patchless_alt",
 	"rhs_uniform_flora",
@@ -277,6 +280,13 @@ blacklisted_from_arsenal = [
                 "rhs_6sh92_digi_vog_headset",
 		"rhs_vest_commander",
                 "rhs_vest_pistol_holster",
+	  	"rhs_6sh92_vsr",
+		"rhs_6sh92_vsr_radio",
+		"rhs_6sh92_vsr_headset",
+		"rhs_6sh92_vsr_vog",
+		"rhs_6sh92_vsr_vog_headset",
+		"rhs_6b43",
+		"rhs_6b23_digi_6sh92_vog_spetsnaz",
 /*RHS Russen Helme*/
 		"rhs_6b26_green",
                 "rhs_6b26_bala_green",
@@ -360,11 +370,21 @@ blacklisted_from_arsenal = [
                 "rhs_fieldcap_ml",
                 "rhs_fieldcap_khk",
                 "rhs_fieldcap_vsr",
+		"rhs_altyn_novisor",
+		"rhs_altyn_novisor_bala",
+		"rhs_altyn_novisor_ess",
+		"rhs_altyn_novisor_ess_bala",
+		"rhs_altyn_visordown",
+		"rhs_altyn",
+		"rhs_altyn_bala",
+		"rhs_ssh68",
 /*RHS Russen Rucksäcke*/
 		"rhs_rpg_empty",
                 "rhs_sidor",
                 "rhs_assault_umbts",
-                "rhs_assault_umbts_engineer_empty"
+                "rhs_assault_umbts_engineer_empty",
+/*RHS Russen Waffen*/
+		"rhs_weap_igla"
 ];
 
 // Items which should be added as allowed Items, when they get blacklisted, even if they are not in the blacklisted_from_arsenal array
