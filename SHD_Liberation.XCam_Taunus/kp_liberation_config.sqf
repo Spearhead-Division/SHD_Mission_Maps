@@ -44,9 +44,9 @@ KP_liberation_arsenal = 0;
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine.	*/
 KP_liberation_fuel_neutral = 180;
 // Time in minutes till a full tank depletes whilst the vehicle is driving below max speed.
-KP_liberation_fuel_normal = 90;
+KP_liberation_fuel_normal = 70;
 // Time in minutes till a full tank depletes whilst the vehicle is driving at max speed.
-KP_liberation_fuel_max = 45;
+KP_liberation_fuel_max = 30;
 
 /* - Gameplay constant settings.
 Name of the savegame namespace inside of the [ServerProfileName].vars.Arma3Profile file.	*/
@@ -197,6 +197,7 @@ blacklisted_from_arsenal = [
 	"rhs_uniform_mflora_patchless",
 	"rhs_uniform_vdv_mflora",
 	"rhs_uniform_m88_patchless",
+	"rhs_uniform_emr_des_patchless",
 /*RHS Russen Westen*/
 		"rhs_6b13_Flora",
                 "rhs_6b13_Flora_6sh92",
@@ -287,6 +288,8 @@ blacklisted_from_arsenal = [
 		"rhs_6sh92_vsr_vog_headset",
 		"rhs_6b43",
 		"rhs_6b23_digi_6sh92_vog_spetsnaz",
+		"rhs_6b23_digi_6sh92_spetsnaz2",
+		"rhs_6b23_digi_6sh92_Vog_Spetsnaz",
 /*RHS Russen Helme*/
 		"rhs_6b26_green",
                 "rhs_6b26_bala_green",
