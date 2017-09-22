@@ -20,7 +20,7 @@ class ace_common_checkPBOsCheckAll {
     force = 1;
 };
 class ace_common_checkPBOsWhitelist {
-    value = "['blastcore_sun','blastcore_smokecs','warfxpe','blastcore_vep']";
+    value = "['blastcore_sun','blastcore_smokecs','warfxpe','blastcore_vep','blastcore_maincore']";
     typeName = "STRING";
     force = 1;
 };
