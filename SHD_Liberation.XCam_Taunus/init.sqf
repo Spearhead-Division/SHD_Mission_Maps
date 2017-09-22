@@ -38,6 +38,8 @@ if (!isDedicated && hasInterface) then {
 	setViewDistance 1600;
 };
 //ADV_aceCPR
-adv_aceCPR_probabilities = [100,50,5,85];
+adv_aceCPR_onlyDoctors = 0;
+adv_aceCPR_probabilities = [50,25,5,85];
+adv_aceCPR_diag = false;
 
 if (KP_liberation_debug) then {private _text = format ["[KP LIBERATION] [DEBUG] init.sqf done for: %1", debug_source];_text remoteExec ["diag_log",2];};
