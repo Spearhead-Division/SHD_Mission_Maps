@@ -500,7 +500,7 @@ class ace_rearm_supply {
     force = 1;
 };
 class ace_refuel_rate {
-    value = 10;
+    value = 5;
     typeName = "SCALAR";
     force = 1;
 };
