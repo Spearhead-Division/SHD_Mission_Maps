@@ -232,7 +232,7 @@ buildings = [
 
 support_vehicles = [
 	[Arsenal_typename,100,200,0],
-	[Respawn_truck_typename,200,0,100],
+	/*[Respawn_truck_typename,200,0,100], 			ersetzt- Arsenalkiste als mobiles Arsenal und Respawn definiert- siehe "Support classnames" */
 	[FOB_box_typename,300,500,0],
 	[FOB_truck_typename,300,500,75],
 	[KP_liberation_small_storage_building,0,0,0],
