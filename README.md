@@ -11,18 +11,18 @@
 - ACE + Compliaitäts Patches
 - ACEX
 - ASP_AI3 + RHS und BWMod Config
-- BWMod v1.51
-- Bundeswehr Kleiderkammer
+- BWMod v1.51 http://bwmod.de/index.php/inhalt/download
+- Bundeswehr Kleiderkammer http://www.armaholic.com/page.php?id=28631
 - CBA_A3
-- CUP Terrians Maps
-- CUP Terrians Core
+- CUP Terrians Maps http://cup-arma3.org/download
+- CUP Terrians Core http://cup-arma3.org/download
 - NIArsenal
 - Redd Vehicles
-- RHSUSAF
-- RHSAFAR
+- RHSUSAF http://www.rhsmods.org/mod/2
+- RHSAFAR http://www.rhsmods.org/mod/1
 - SHD ModPack
 - TFAR
-- X-Cam Taunus v1.1
+- X-Cam Taunus v1.1 https://forums.bistudio.com/forums/topic/200913-x-cam-taunus-version-11/
 
 ### Optionale Mods
 
