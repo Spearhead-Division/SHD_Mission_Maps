@@ -500,12 +500,12 @@ class ace_rearm_supply {
     force = 1;
 };
 class ace_refuel_rate {
-    value = 5;
+    value = 1;
     typeName = "SCALAR";
     force = 1;
 };
 class ace_refuel_hoseLength {
-    value = 12;
+    value = 15;
     typeName = "SCALAR";
     force = 1;
 };
