@@ -12,14 +12,22 @@
 - ACEX
 - ASP_AI3 + RHS und BWMod Config
 - BWMod v1.51
+- Bundeswehr Kleiderkammer
 - CBA_A3
 - CUP Terrians Maps
 - CUP Terrians Core
+- NIArsenal
+- Redd Vehicles
 - RHSUSAF
 - RHSAFAR
 - SHD ModPack
 - TFAR
 - X-Cam Taunus v1.1
+
+### Optionale Mods
+
+- Reallight v7
+- Blastcore Edited (standaline version)
 
 ### ArmaSync
 
