@@ -404,6 +404,8 @@ KP_liberation_allowed_items_extension = [
 /* - Configuration settings for crates transported by vehicles.
 Format = ["classname", distance behind vehicle to unload crate, attachTo positions for each box],	*/
 box_transport_config = [
+	["BW_LKW_Transport_offen_fleck", -6.5, [0,-1.1,0.25], [0,-2.6,0.25],[0,-4.1,0.25]],
+	["BW_LKW_Transport_Fleck", -6.5, [0,-1.1,0.25], [0,-2.6,0.25],[0,-4.1,0.25]],
 	["C_Offroad_01_F", -6.5, [0,-1.7,0.4]],
 	["I_G_Offroad_01_F", -6.5, [0,-1.7,0.4]],
 	["O_G_Offroad_01_F", -6.5, [0,-1.7,0.4]],
