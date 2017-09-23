@@ -24,8 +24,9 @@
 ### ArmaSync
 
 - repository Link:
-  - ftp:///
+  - ftp://spearheads-multigaming.de/.a3s/autoconfig
  
 ### Teamspeak Server
 
--
+- Spearheads-multigaming.de
+  - pw: 
