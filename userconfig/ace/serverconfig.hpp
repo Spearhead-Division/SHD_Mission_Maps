@@ -820,12 +820,12 @@ class ace_advanced_fatigue_enabled {
     force = 1;
 };
 class ace_advanced_fatigue_performanceFactor {
-    value = 1.2;
+    value = 1.5;
     typeName = "SCALAR";
     force = 1;
 };
 class ace_advanced_fatigue_recoveryFactor {
-    value = 2;
+    value = 2.5;
     typeName = "SCALAR";
     force = 1;
 };
@@ -983,4 +983,9 @@ class ace_advanced_ballistics_simulationRadius {
     value = 2000;
     typeName = "SCALAR";
     force = 1;
-}
+};
+class ACEX_ModuleSitting {
+    value = 1;
+    typeName = "BOOL";
+    force = 1;
+};
