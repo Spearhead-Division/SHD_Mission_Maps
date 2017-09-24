@@ -489,7 +489,8 @@ vehicle_repair_sources = [
 	"rhsusf_M977A4_REPAIR_BKIT_usarmy_d",
 	"rhsusf_M977A4_REPAIR_BKIT_usarmy_wd",
 	"rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d",
-	"rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_wd"
+	"rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_wd",
+	"USMC_WarfareBUAVterminal"
 ];
 
 vehicle_rearm_sources = [
@@ -503,7 +504,8 @@ vehicle_rearm_sources = [
 	"rhsusf_M977A4_AMMO_BKIT_usarmy_d",
 	"rhsusf_M977A4_AMMO_BKIT_usarmy_wd",
 	"rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d",
-	"rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd"
+	"rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd",
+	"USMC_WarfareBVehicleServicePoint"
 ];
 
 vehicle_refuel_sources = [
@@ -517,7 +519,8 @@ vehicle_refuel_sources = [
 	"rhsusf_M978A4_usarmy_d",
 	"rhsusf_M978A4_usarmy_wd",
 	"rhsusf_M978A4_BKIT_usarmy_d",
-	"rhsusf_M978A4_BKIT_usarmy_wd"
+	"rhsusf_M978A4_BKIT_usarmy_wd",
+	"land_vodni_vez"
 ];
 
 // Classnames of boats, so they can be built on water.
