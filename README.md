@@ -26,8 +26,8 @@
 
 ### Optionale Mods
 
-- Reallight v7
-- Blastcore Edited (standaline version)
+- Reallight v7 http://sh8.videopilot.link/real-light-7/
+- Blastcore Edited (standaline version) http://steamcommunity.com/sharedfiles/filedetails/?id=767380317
 
 ### ArmaSync
 
