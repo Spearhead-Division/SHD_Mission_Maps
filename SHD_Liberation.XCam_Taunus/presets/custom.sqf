@@ -281,7 +281,7 @@ support_vehicles = [
 	["BW_LKW_Munition_Fleck",125,200,75],								//M977A4 Ammo
 	["B_Slingload_01_Repair_F",275,0,0],								//Huron Repair
 	["B_Slingload_01_Fuel_F",75,0,200],									//Huron Fuel
-	["B_Slingload_01_Ammo_F",75,200,0]									//Huron Ammo
+	["B_Slingload_01_Ammo_F",75,200,0],									//Huron Ammo
 	["Land_vodni_vez",40,0,100],									//Fuel-Station
 	["USMC_WarfareBVehicleServicePoint",40,100,0],							//Ammo-Station
 	["USMC_WarfareBUAVterminal",140,0,0]								//Repair-Station
