@@ -227,11 +227,28 @@ buildings = [
 	["Land_Sign_WarningMilAreaSmall_F",0,0,0],
 	["Land_Sign_WarningMilitaryVehicles_F",0,0,0],
 	["Land_Razorwire_F",0,0,0],
-	["Land_ClutterCutter_large_F",0,0,0]
+	["Land_ClutterCutter_large_F",0,0,0],
+	["Land_PartyTent_01_F",0,0,0],
+	["Land_portable_generator_F",0,0,0],
+	["land_portablegenerator_01_F",0,0,0],
+	["Land_mobilelandingplatform_01_f",0,0,0],
+	["land_missle_trolley_02_F",0,0,0],
+	["plp_ctm_warehouseladderbluemedium",0,0,0],
+	["land_jetenginestarter_01_f",0,0,0],
+	["waterpump_01_forest_F",0,0,0],
+	["land_pressurewasher_01_F",0,0,0],
+	["land_stretcer_01_olive_f",0,0,0],
+	["land_Device_slingloadable_f",0,0,0],
+	["land_plasticBarrier_03_f",0,0,0],
+	["xCam_pflaster_platten_3m_ecke_f",0,0,0],
+	["xCam_pflaster_platten_3m_F",0,0,0],
+	["TargetP_inf4_acc2_F",0,0,0],
+	["usmc_warfareBUAVterminal",0,0,0],
+
 ];
 
 support_vehicles = [
-	[Arsenal_typename,100,200,0],
+	[Arsenal_typename,250,250,0],
 	/*[Respawn_truck_typename,200,0,100], 			ersetzt- Arsenalkiste als mobiles Arsenal und Respawn definiert- siehe "Support classnames" */
 	[FOB_box_typename,300,500,0],
 	[FOB_truck_typename,300,500,75],
