@@ -151,6 +151,21 @@ static_vehicles = [
 ];
 
 buildings = [
+	["Land_fort_artillery_nest",0,0,0],
+	["Land_fort_rampart",0,0,0],
+	["Land_fort_bagfence_long",0,0,0],
+	["Land_fort_bagfence_corner",0,0,0],
+	["Land_fort_bagfence_round",0,0,0],
+	["Fortress1",0,0,0],
+	["Fortress2",0,0,0],
+	["Hedgehog_EP1",0,0,0],
+	["Hhedgehog_concreteBig",0,0,0],
+	["Shed",0,0,0],
+	["Land_Vez",0,0,0],
+	["Land_SandbagBarricade_01_hole_F",0,0,0],
+	["Land_SandbagBarricade_01_F",0,0,0],
+	["Land_SandbagBarricade_01_half_F",0,0,0],
+	["Shedbig",0,0,0],
 	["Land_Cargo_House_V1_F",0,0,0],
 	["Land_Cargo_Patrol_V1_F",0,0,0],
 	["Land_Cargo_Tower_V1_F",0,0,0],
