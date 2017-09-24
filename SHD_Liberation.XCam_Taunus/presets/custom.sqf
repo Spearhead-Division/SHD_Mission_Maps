@@ -257,8 +257,7 @@ buildings = [
 	["xCam_pflaster_platten_3m_ecke_f",0,0,0],
 	["xCam_pflaster_platten_3m_F",0,0,0],
 	["TargetP_inf4_acc2_F",0,0,0],
-	["Ins_WarfareBBarracks",0,0,0],
-
+	["Ins_WarfareBBarracks",0,0,0]
 ];
 
 support_vehicles = [
@@ -285,7 +284,7 @@ support_vehicles = [
 	["B_Slingload_01_Ammo_F",75,200,0]									//Huron Ammo
 	["Land_vodni_vez",40,0,100],									//Fuel-Station
 	["USMC_WarfareBVehicleServicePoint",40,100,0],							//Ammo-Station
-	["USMC_WarfareBUAVterminal",140,0,0],								//Repair-Station
+	["USMC_WarfareBUAVterminal",140,0,0]								//Repair-Station
 ];
 
 // All the UAVs must be declared here, otherwise there shall be UAV controlling issues. Namely: you won't be able to control them.
