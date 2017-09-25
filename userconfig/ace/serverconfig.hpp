@@ -989,18 +989,3 @@ class ACEX_ModuleSitting {
     typeName = "BOOL";
     force = 1;
 };
-class CfgVehicles {
-    //Treibstoff Gebäude
-    class land_vodni_vez {
-        ace_refuel_fuelCapacity = 5000; // set to correct path static model
-    };
-    //Munitions Gebäude
-    class ace_rearm_defaultCarriedObject;
-    class USMC_WarfareBVehicleServicePoint: ace_rearm_defaultCarriedObject {
-        model = "\directory\model.p3d";  // Set to correct static model path
-    };
-    //Reparier Gebäude
-    class USMC_WarfareBUAVterminal {
-       "ACE_isRepairFacility" = TRUE;
-    };
-};
