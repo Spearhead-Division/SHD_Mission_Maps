@@ -19,8 +19,8 @@ KP_liberation_little_bird_classname = "BWA3_Eagle_Fleck";				// These are the li
 KP_liberation_boat_classname = "B_Boat_Transport_01_F"; 				// These are the boats which spawn at the stern of the Freedom.																			Default is "B_Boat_Transport_01_F".
 KP_liberation_small_storage_building = "ContainmentArea_02_sand_F";		// A small storage area for resources.																									Default is "ContainmentArea_02_sand_F".
 KP_liberation_large_storage_building = "ContainmentArea_01_sand_F";		// A large storage area for resources.																									Default is "ContainmentArea_01_sand_F".
-KP_liberation_recycle_building = "USMC_WarfareBLightFactory";					// The building defined to unlock FOB recycling functionality.																			Default is "Land_CarService_F".
-KP_liberation_air_vehicle_building = "76n6ClamShell";				// The building defined to unlock FOB air vehicle functionality.																		Default is "Land_Radar_Small_F".
+KP_liberation_recycle_building = "Land_CarService_F";					// The building defined to unlock FOB recycling functionality.																			Default is "Land_CarService_F".
+KP_liberation_air_vehicle_building = "Land_Radar_Small_F";				// The building defined to unlock FOB air vehicle functionality.																		Default is "Land_Radar_Small_F".
 KP_liberation_heli_slot_building = "Land_HelipadSquare_F";				// The helipad used to increase the GLOBAL rotary-wing cap.																				Default is "Land_HelipadSquare_F".
 KP_liberation_plane_slot_building = "Land_TentHangar_V1_F";				// The hangar used to increase the GLOBAL fixed-wing cap.																				Default is "Land_TentHangar_V1_F".
 KP_liberation_supply_crate = "CargoNet_01_box_F";						// This defines the supply crates, as in resources.																						Default is "CargoNet_01_box_F".
@@ -256,11 +256,7 @@ buildings = [
 	["land_plasticBarrier_03_f",0,0,0],
 	["xCam_pflaster_platten_3m_ecke_f",0,0,0],
 	["xCam_pflaster_platten_3m_F",0,0,0],
-	["TargetP_inf4_acc2_F",0,0,0],
-	["Ins_WarfareBBarracks",0,0,0],
-	["Land_vodni_vez",50,0,200],									//Fuel-Station
-	["USMC_WarfareBVehicleServicePoint",50,200,0],							//Ammo-Station
-	["USMC_WarfareBUAVterminal",250,0,0] 								//Repair-Station
+	["TargetP_inf4_acc2_F",0,0,0]
 ];
 
 support_vehicles = [
@@ -284,10 +280,7 @@ support_vehicles = [
 	["BW_LKW_Munition_Fleck",125,200,75],								//M977A4 Ammo
 	["B_Slingload_01_Repair_F",275,0,0],								//Huron Repair
 	["B_Slingload_01_Fuel_F",75,0,200],								//Huron Fuel
-	["B_Slingload_01_Ammo_F",75,200,0],								//Huron Ammo
-	["Land_vodni_vez",50,0,200],									//Fuel-Station
-	["USMC_WarfareBVehicleServicePoint",50,200,0],							//Ammo-Station
-	["USMC_WarfareBUAVterminal",250,0,0] 								//Repair-Station
+	["B_Slingload_01_Ammo_F",75,200,0]								//Huron Ammo
 ];
 
 // All the UAVs must be declared here, otherwise there shall be UAV controlling issues. Namely: you won't be able to control them.
