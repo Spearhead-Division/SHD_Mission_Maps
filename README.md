@@ -1,4 +1,5 @@
 ## Spearhead-Division Clanmap
+http://spearheads-division.clans.de/
 
 ### SHD_Liberation_Taunus auf der X-Cam Taunus Karte
 
