@@ -106,7 +106,7 @@ GRLIB_ignore_colisions_when_building = [
 	"B_static_AA_F",									//Static Titan Launcher (AA)
 	"ACE_friesAnchorBar",								//ACE FRIES
 	"ACE_friesGantryReverse",							//ACE FRIES
-	"ACE_friesGantry"									//ACE FRIES
+	"ACE_friesGantry",									//ACE FRIES
 	"Land_fort_artillery_nest",
 	"Land_fort_rampart",
 	"Land_fort_bagfence_long",
