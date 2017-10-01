@@ -119,24 +119,24 @@ air_vehicles = [
 	["RHS_CH_47F_10",375,80,375],									//CH-47 Chinook (Armed)
 	["RHS_AH1Z",600,600,200],									//AH-1Z (Multi-Role)
 	["RHS_AH64D_wd",750,750,250],									//AH-64D (Multi-Role)
-	//["B_UAV_01_F",75,0,25],									//AR-2 Darter
+	/*//["B_UAV_01_F",75,0,25],									//AR-2 Darter
 	//["B_UAV_02_dynamicLoadout_F",400,300,200],							//MQ-4A Greyhawk
 	//["B_T_UAV_03_dynamicLoadout_F",450,500,250],							//MQ-12 Falcon
-	//["B_UAV_05_F",500,500,200],									//UCAV Sentinel
+	//["B_UAV_05_F",500,500,200],*/									//UCAV Sentinel
 	["I_Plane_Fighter_03_dynamicloadout_F",750,750,750],
 	["I_Plane_Fighter_04_F",1000,1000,1000],
 	["RHS_A10",1000,1000,1000],									//A-10A (CAS)
 	["rhsusf_f22",1000,1000,1000],
-	//["FIR_F15C",1250,1250,1250],									//F-15C Eagle
+	/*//["FIR_F15C",1250,1250,1250],									//F-15C Eagle
 	//["FIR_F15D",1500,1500,1500],									//F-15D Eagle
 	//["FIR_F15E",1500,1500,1500],									//F-15E Strike Eagle
 	//["JS_JC_FA18E",1750,1750,1750],								//F/A-18 E Super Hornet
-	//["JS_JC_FA18F",1750,1750,1750],								//F/A-18 F Super Hornet
+	//["JS_JC_FA18F",1750,1750,1750],*/								//F/A-18 F Super Hornet
 	["B_Plane_Fighter_01_F",1750,1750,1750],							//F/A-181 Black Wasp II
-	["B_Plane_Fighter_01_Stealth_F",1750,1750,1750],						//F/A-181 Black Wasp II (Stealth)
-	//["B_T_VTOL_01_armed_F",750,1500,500],								//V-44 X Blackfish (Armed)
+	["B_Plane_Fighter_01_Stealth_F",1750,1750,1750]						//F/A-181 Black Wasp II (Stealth)
+	/*//["B_T_VTOL_01_armed_F",750,1500,500],								//V-44 X Blackfish (Armed)
 	//["B_T_VTOL_01_infantry_F",750,0,500],								//V-44 X Blackfish (Infantry)
-	//["B_T_VTOL_01_vehicle_F",750,0,500]								//V-44 X Blackfish (Vehicle)
+	//["B_T_VTOL_01_vehicle_F",750,0,500]*/								//V-44 X Blackfish (Vehicle)
 ];
 
 static_vehicles = [
@@ -547,20 +547,20 @@ elite_vehicles = [
 	"rhsusf_m109_usarmy",										//M109A6
 	"RHS_AH64D_wd",											//AH-64D (Multi-Role)
 	"BWA3_Tiger_RMK_Universal",									//UH Tiger RMK (Universal)
-	//"B_UAV_02_dynamicLoadout_F",									//MQ-4A Greyhawk
+	/*//"B_UAV_02_dynamicLoadout_F",									//MQ-4A Greyhawk
 	//"B_T_UAV_03_dynamicLoadout_F",								//MQ-12 Falcon
-	//"B_UAV_05_F",											//UCAV Sentinel
+	//"B_UAV_05_F",	*/										//UCAV Sentinel
 	"RHS_A10",											//A-10A (CAS)
 	"rhsusf_f22",
 	"I_Plane_Fighter_04_F",
-	//"FIR_F15C",											//F-15C Eagle
+	/*//"FIR_F15C",											//F-15C Eagle
 	//"FIR_F15D",											//F-15D Eagle
 	//"FIR_F15E",											//F-15E Strike Eagle
 	//"JS_JC_FA18E",										//F/A-18 E Super Hornet
-	//"JS_JC_FA18F",										//F/A-18 F Super Hornet
+	//"JS_JC_FA18F",*/										//F/A-18 F Super Hornet
 	"B_Plane_Fighter_01_F",										//F/A-181 Black Wasp II
 	"B_Plane_Fighter_01_Stealth_F"									//F/A-181 Black Wasp II (Stealth)
-	//"B_T_VTOL_01_armed_F"										//V-44 X Blackfish (Armed)
+	/*"B_T_VTOL_01_armed_F"	*/									//V-44 X Blackfish (Armed)
 ];
 
 if (KP_liberation_debug) then {private _text = format ["[KP LIBERATION] [DEBUG] Unit preset %1 intitialized for: %2", KP_liberation_preset, debug_source];_text remoteExec ["diag_log",2];};
