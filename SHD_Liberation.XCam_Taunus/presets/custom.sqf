@@ -431,22 +431,21 @@ militia_vehicles = [
 // All enemy vehicles that can spawn as sector defenders and patrols at high enemy combat readiness (aggression levels).
 opfor_vehicles = [
 	"rhs_tigr_sts_msv",													//GAZ-233014 (Armed)
-	"rhs_tigr_sts_msv",													//GAZ-233014 (Armed)
-	"rhs_tigr_sts_msv",													//GAZ-233014 (Armed)
 	"rhs_bmp2d_msv",													//BMP-2D
 	"rhs_bmp2k_msv",													//BMP-2K
 	"rhs_brm1k_msv",													//BRM-1K
-	"rhs_zsu234_aa",													//ZSU-23-4V
+	"rhs_btr70_msv",													//ZSU-23-4V
 	"rhs_zsu234_aa",													//ZSU-23-4V
 	"rhs_t80",															//T80
-	"rhs_t80",															//T80
+	"RHS_Mi24V_AT_vvsc",
+	"rhs_t72ba_tv",															//T80
 	"rhs_t90a_tv"														//T90A
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols but at a lower enemy combat readiness (aggression levels).
 opfor_vehicles_low_intensity = [
 	"rhs_tigr_sts_msv",													//GAZ-233014 (Armed)
-	"rhs_tigr_sts_msv",													//GAZ-233014 (Armed)
+	"rhs_btr60_msv",
 	"rhs_btr80_msv",													//BTR-80
 	"rhs_btr80a_msv"													//BTR-80A
 ];
@@ -468,7 +467,9 @@ opfor_battlegroup_vehicles = [
 	"rhs_t90a_tv",														//T90A
 	"RHS_Mi24P_AT_vvsc",												//Mi-24P (AT)
 	"RHS_Mi24V_AT_vvsc",												//Mi-24V (AT)
-	"RHS_Mi8mt_Cargo_vvsc",												//Mi-8MT (Cargo)
+	"RHS_Mi8mt_Cargo_vvsc",	
+	"rhs_mi28n_vvsc",
+	"RHS_Su25SM_vvsc",
 	"RHS_Ka52_vvsc"														//Ka-52
 ];
 
@@ -504,6 +505,7 @@ opfor_choppers = [
 	"RHS_Mi8mt_Cargo_vvsc",												//Mi-8MT (Cargo)
 	"RHS_Mi24P_AT_vvsc",												//Mi-24P (AT)
 	"RHS_Mi24V_AT_vvsc",												//Mi-24V (AT)
+	"rhs_mi28n_vvsc",
 	"RHS_Ka52_vvsc"														//Ka-52
 ];
 
