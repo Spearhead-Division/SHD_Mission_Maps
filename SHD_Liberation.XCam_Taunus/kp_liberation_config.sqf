@@ -9,6 +9,9 @@ KP_liberation_medical_vehicles = [
 	"rhsusf_m113_usarmy_medical",
 	"rhsusf_m113d_usarmy_medical",
 	"RHS_UH60M_MEV2",
+	"rhsusf_m1230a1_usarmy_wd",
+	"rhsusf_m1085A1P2_B_WD_Medical_fmtv_usarmy",
+	"RHS_UH60M_MEV",
 	"RHS_UH60M_MEV2_d"
 ];
 
@@ -489,8 +492,7 @@ vehicle_repair_sources = [
 	"rhsusf_M977A4_REPAIR_BKIT_usarmy_d",
 	"rhsusf_M977A4_REPAIR_BKIT_usarmy_wd",
 	"rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d",
-	"rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_wd",
-	"USMC_WarfareBUAVterminal"
+	"rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_wd"
 ];
 
 vehicle_rearm_sources = [
@@ -504,8 +506,7 @@ vehicle_rearm_sources = [
 	"rhsusf_M977A4_AMMO_BKIT_usarmy_d",
 	"rhsusf_M977A4_AMMO_BKIT_usarmy_wd",
 	"rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d",
-	"rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd",
-	"USMC_WarfareBVehicleServicePoint"
+	"rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd"
 ];
 
 vehicle_refuel_sources = [
@@ -519,8 +520,7 @@ vehicle_refuel_sources = [
 	"rhsusf_M978A4_usarmy_d",
 	"rhsusf_M978A4_usarmy_wd",
 	"rhsusf_M978A4_BKIT_usarmy_d",
-	"rhsusf_M978A4_BKIT_usarmy_wd",
-	"land_vodni_vez"
+	"rhsusf_M978A4_BKIT_usarmy_wd"
 ];
 
 // Classnames of boats, so they can be built on water.
