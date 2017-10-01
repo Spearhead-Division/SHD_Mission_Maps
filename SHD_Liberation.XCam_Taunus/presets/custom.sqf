@@ -559,7 +559,7 @@ elite_vehicles = [
 	//"JS_JC_FA18E",										//F/A-18 E Super Hornet
 	//"JS_JC_FA18F",										//F/A-18 F Super Hornet
 	"B_Plane_Fighter_01_F",										//F/A-181 Black Wasp II
-	"B_Plane_Fighter_01_Stealth_F",									//F/A-181 Black Wasp II (Stealth)
+	"B_Plane_Fighter_01_Stealth_F"									//F/A-181 Black Wasp II (Stealth)
 	//"B_T_VTOL_01_armed_F"										//V-44 X Blackfish (Armed)
 ];
 
