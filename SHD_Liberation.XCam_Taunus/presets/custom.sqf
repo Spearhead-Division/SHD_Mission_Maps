@@ -91,6 +91,7 @@ heavy_vehicles = [
 	["Redd_Marder_1A5_Flecktarn",250,200,150],
 	["BWA3_Puma_Fleck",350,350,150],								//IFV Puma
 	["BWA3_Leopard2A6M_Fleck",750,750,300],								//MBT Leopard 2A6M
+	["rhsusf_m113_usarmy_medical",175,0,100],							//M113A3 Medical
 	["rhsusf_m113_usarmy",175,50,100],								//M113A3 (M2)
 	["rhsusf_m113_usarmy_MK19",175,80,100],								//M113A3 (Mk19)
 	["rhsusf_M1117_W",250,200,150],									//M1117_W
