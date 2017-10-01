@@ -61,82 +61,81 @@ infantry_units = [
 ];
 
 light_vehicles = [
-	["B_Quadbike_01_F",50,0,25],										//Quad Bike
-	["rhsusf_m1025_w",100,0,50],										//M1025A2
-	["rhsusf_m1025_w_m2",100,50,50],									//M1025A2 (M2)
-	["rhsusf_m1025_w_mk19",100,80,50],									//M1025A2 (Mk19)
-	["rhsusf_m998_w_2dr_fulltop",100,0,50],								//M1097A2 (2D)
-	["rhsusf_m998_w_2dr_halftop",100,0,50],								//M1097A2 (2D / open back)
-	["KGB_B_MRAP_03_F",100,0,50],										//Strider
-	["KGB_B_MRAP_03_hmg_F",100,50,50],									//Strider (HMG) 
-	["KGB_B_MRAP_03_gmg_F",100,80,50],									//Strider (GMG)
-	["rhsusf_m1025_w",100,0,50],										//M1025A2
-	["rhsusf_m1025_w_m2",100,50,50],									//M1025A2 (M2)
-	["rhsusf_m1025_w_mk19",100,80,50],									//M1025A2 (Mk19)
-	["rhsusf_m998_w_2dr_fulltop",100,0,50],								//M1097A2 (2D)
-	["rhsusf_m998_w_2dr_halftop",100,0,50],								//M1097A2 (2D / open back)
-	["BWA3_Eagle_Fleck",100,0,50],										//Eagle IV
-	["BWA3_Eagle_FLW100_Fleck",100,50,50],								//Eagle IV (FLW 100)
+	["B_Quadbike_01_F",25,0,25],									//Quad Bike
 	["BW_LKW_Transport_offen_fleck",125,0,75],							//BW LKW Transport offen
 	["BW_LKW_Transport_Fleck",125,0,75],								//BW LKW Transport geschlossen
-	["rhsusf_M1237_M2_usarmy_wd",125,50,75],
-	["rhsusf_M1237_Mk19_usarmy_wd",125,80,75],
-	["rhsusf_M1083A1P2_wd_fmtv_usarmy",125,0,75],						//M1083A1P2 (covered infantry truck)
-	["rhsusf_M1083A1P2_wd_open_fmtv_usarmy",125,0,75],					//M1083A1P2 (open infantry truck)
+	["BWA3_Eagle_Fleck",100,0,50],									//Eagle IV
+	["BWA3_Eagle_FLW100_Fleck",100,50,50],								//Eagle IV (FLW 100)
+	["KGB_B_MRAP_03_F",120,0,75],									//Strider
+	["KGB_B_MRAP_03_hmg_F",120,50,75],								//Strider (HMG) 
+	["KGB_B_MRAP_03_gmg_F",120,80,75],								//Strider (GMG)
+	["rhsusf_M1083A1P2_wd_fmtv_usarmy",125,0,75],							//M1083A1P2 (covered infantry truck)
+	["rhsusf_M1083A1P2_wd_open_fmtv_usarmy",125,0,75],						//M1083A1P2 (open infantry truck)
+	["rhsusf_m1085A1P2_B_WD_Medical_fmtv_usarmy",150,0,75],						//Medivac
+	["rhsusf_m1083a1p2_b_m2_WD_fmtv_usarmy",150,50,75],
 	["rhsusf_M977A4_BKIT_usarmy_wd",125,0,75],							//M977A4 BKIT (cargo truck)
-	["rhsusf_M977A4_BKIT_M2_usarmy_wd",125,50,75],						//M977A4 BKIT (cargo truck with HMG)
-	["B_UGV_01_F",150,0,50],											//UGV Stomper
-	["B_UGV_01_rcws_F",150,40,50],										//UGV Stomper (RCWS)
-	["B_Boat_Transport_01_F",100,0,25],									//Assault Boat
-	["B_Boat_Armed_01_minigun_F",200,100,75],							//Speedboat Minigun
-	["rhsusf_mkvsoc",250,200,100],										//Mk.V SOCOM
-	["B_SDV_01_F",150,0,50]												//SDV
+	["rhsusf_M977A4_BKIT_M2_usarmy_wd",125,50,75],							//M977A4 BKIT (cargo truck with HMG)
+	["rhsusf_m998_w_2dr_fulltop",80,0,50],								//M1097A2 (2D)
+	["rhsusf_m998_w_2dr_halftop",80,0,50],								//M1097A2 (2D / open back)
+	["rhsusf_m1025_w",100,0,50],									//M1025A2
+	["rhsusf_m1025_w_m2",100,50,50],								//M1025A2 (M2)
+	["rhsusf_m1025_w_mk19",100,80,50],								//M1025A2 (Mk19)
+	["rhsusf_m1230_m2_usarmy_wd",125,50,75],
+	["rhsusf_m1230_mk19_usarmy_wd",125,80,75],
+	["rhsusf_m1230a1_usarmy_wd",125,0,100],								//Medivac
+	["rhsusf_M1237_M2_usarmy_wd",150,50,100],
+	["rhsusf_M1237_Mk19_usarmy_wd",150,80,100]
 ];
 
 heavy_vehicles = [
 	["Redd_Marder_1A5_Flecktarn",250,200,150],
-	["rhsusf_m113_usarmy",200,40,100],									//M113A3 (M2)
-	["rhsusf_m113_usarmy_MK19",200,60,100],								//M113A3 (Mk19)
-	["RHS_M2A2_BUSKI_WD",300,200,150],									//M2A2ODS (Busk I)
-	["BWA3_Puma_Fleck",300,225,150],									//IFV Puma
-	["RHS_M2A3_BUSKIII_wd",300,250,175],								//M2A3 (Busk III)
-	["RHS_M6_wd",300,250,175],											//M6A2
-	["rhsusf_m1a1aim_tuski_wd",400,350,225],							//M1A1SA (Tusk I)
-	["rhsusf_m1a2sep1tuskiiwd_usarmy",500,400,250],						//M1A2SEPv1 (Tusk II)
-	["BWA3_Leopard2A6M_Fleck",500,400,250],								//MBT Leopard 2A6M
-	["rhsusf_m109_usarmy",600,1250,300]									//M109A6
+	["BWA3_Puma_Fleck",350,350,150],								//IFV Puma
+	["BWA3_Leopard2A6M_Fleck",750,750,300],								//MBT Leopard 2A6M
+	["rhsusf_m113_usarmy",175,50,100],								//M113A3 (M2)
+	["rhsusf_m113_usarmy_MK19",175,80,100],								//M113A3 (Mk19)
+	["rhsusf_M1117_W",250,200,150],									//M1117_W
+	["rhs_m2a2_wd",325,325,150],									//M2A2ODS
+	["RHS_M2A3_BUSKIII_wd",400,400,175],								//M2A3 (Busk III)
+	["rhsusf_m1a1aimwd_usarmy",550,550,250],							//M1A1SA 
+	["rhsusf_m1a2sep1tuskiiwd_usarmy",750,750,300],							//M1A2SEPv1 (Tusk II)
+	["rhsusf_m109_usarmy",800,1250,300],								//M109A6
+	["RHS_M6_wd",350,350,175]									//M6A2
 ];
 
 air_vehicles = [
-	["B_UAV_01_F",75,0,25],												//AR-2 Darter
-	["AH6_Littlebird_BW_Fleck",200,50,100],								//AH-6M Little Bird
-	["RHS_MELB_AH6M_L",200,100,100],									//AH-6M-L Little Bird
-	["RHS_MELB_AH6M_M",200,200,100],									//AH-6M-M Little Bird
-	["RHS_MELB_AH6M_H",200,350,100],									//AH-6M-H Little Bird
-	["AW159_BW_Black_Unbewaffnet",225,0,125],							//Wildcat (Unarmed)
-	["AW159_BW_Black",225,200,125],										//Wildcat (Ground Suppression)
-	["RHS_AH1Z",500,500,200],											//AH-1Z (Multi-Role)
-	["RHS_AH64D_wd",750,750,250],										//AH-64D (Multi-Role)
+	["NH_90_Black",250,0,250],									//NH 90 Black BW
+	["AW159_BW_Black_Unbewaffnet",225,0,225],							//Wildcat (Unarmed)
+	["AW159_BW_Black",225,200,225],									//Wildcat (Ground Suppression)
 	["BWA3_Tiger_RMK_Universal",750,750,250],							//UH Tiger RMK (Universal)
-	["NH_90_Black",250,0,150],											//NH 90 Black BW
-	["RHS_UH60M",250,80,150],											//UH-60M
-	["RHS_UH60M_MEV2",300,0,150],										//UH-60M MEV2
-	["RHS_CH_47F_10",275,80,175],										//CH-47 Chinook (Armed)
-	["rhsusf_CH53E_USMC",300,0,175],									//CH-53E Super Stallion
-	["B_UAV_02_dynamicLoadout_F",400,300,200],							//MQ-4A Greyhawk
-	["B_T_UAV_03_dynamicLoadout_F",450,500,250],						//MQ-12 Falcon
-	["B_UAV_05_F",500,500,200],											//UCAV Sentinel
-	["RHS_A10",1000,1000,400],											//A-10A (CAS)
-	["FIR_F15C",1250,1250,450],											//F-15C Eagle
-	["FIR_F15D",1250,1250,450],											//F-15D Eagle
-	["FIR_F15E",1250,1500,450],											//F-15E Strike Eagle
-	["JS_JC_FA18E",1500,1750,450],										//F/A-18 E Super Hornet
-	["JS_JC_FA18F",1500,1750,450],										//F/A-18 F Super Hornet
-	["B_Plane_Fighter_01_F",1500,1750,450],								//F/A-181 Black Wasp II
-	["B_Plane_Fighter_01_Stealth_F",1500,1750,450],						//F/A-181 Black Wasp II (Stealth)
-	["B_T_VTOL_01_armed_F",750,1500,500],								//V-44 X Blackfish (Armed)
-	["B_T_VTOL_01_infantry_F",750,0,500],								//V-44 X Blackfish (Infantry)
-	["B_T_VTOL_01_vehicle_F",750,0,500]									//V-44 X Blackfish (Vehicle)
+	["RHS_MELB_MH6M",150,0,150],
+	["RHS_MELB_AH6M_L",150,100,150],								//AH-6M-L Little Bird
+	["RHS_MELB_AH6M_M",150,200,150],								//AH-6M-M Little Bird
+	["RHS_MELB_AH6M_H",150,350,150],								//AH-6M-H Little Bird
+	["RHS_UH1Y",225,80,225],
+	["RHS_UH60M",250,80,250],									//UH-60M
+	["RHS_UH60M_MEV",300,0,300],									//UH-60M MEV
+	["rhsusf_CH53E_USMC",325,0,325],								//CH-53E Super Stallion
+	["RHS_CH_47F_10",375,80,375],									//CH-47 Chinook (Armed)
+	["RHS_AH1Z",600,600,200],									//AH-1Z (Multi-Role)
+	["RHS_AH64D_wd",750,750,250],									//AH-64D (Multi-Role)
+	//["B_UAV_01_F",75,0,25],									//AR-2 Darter
+	//["B_UAV_02_dynamicLoadout_F",400,300,200],							//MQ-4A Greyhawk
+	//["B_T_UAV_03_dynamicLoadout_F",450,500,250],							//MQ-12 Falcon
+	//["B_UAV_05_F",500,500,200],									//UCAV Sentinel
+	["I_Plane_Fighter_03_dynamicloadout_F",750,750,750],
+	["I_Plane_Fighter_04_F",1000,1000,1000],
+	["RHS_A10",1000,1000,1000],									//A-10A (CAS)
+	["rhsusf_f22",1000,1000,1000],
+	//["FIR_F15C",1250,1250,1250],									//F-15C Eagle
+	//["FIR_F15D",1500,1500,1500],									//F-15D Eagle
+	//["FIR_F15E",1500,1500,1500],									//F-15E Strike Eagle
+	//["JS_JC_FA18E",1750,1750,1750],								//F/A-18 E Super Hornet
+	//["JS_JC_FA18F",1750,1750,1750],								//F/A-18 F Super Hornet
+	["B_Plane_Fighter_01_F",1750,1750,1750],							//F/A-181 Black Wasp II
+	["B_Plane_Fighter_01_Stealth_F",1750,1750,1750],						//F/A-181 Black Wasp II (Stealth)
+	//["B_T_VTOL_01_armed_F",750,1500,500],								//V-44 X Blackfish (Armed)
+	//["B_T_VTOL_01_infantry_F",750,0,500],								//V-44 X Blackfish (Infantry)
+	//["B_T_VTOL_01_vehicle_F",750,0,500]								//V-44 X Blackfish (Vehicle)
 ];
 
 static_vehicles = [
@@ -245,25 +244,14 @@ buildings = [
 	["Land_PartyTent_01_F",0,0,0],
 	["Land_portable_generator_F",0,0,0],
 	["land_portablegenerator_01_F",0,0,0],
-	["Land_mobilelandingplatform_01_f",0,0,0],
-	["land_missle_trolley_02_F",0,0,0],
-	["plp_ctm_warehouseladderbluemedium",0,0,0],
-	["land_jetenginestarter_01_f",0,0,0],
-	["waterpump_01_forest_F",0,0,0],
-	["land_pressurewasher_01_F",0,0,0],
-	["land_stretcer_01_olive_f",0,0,0],
-	["land_Device_slingloadable_f",0,0,0],
-	["land_plasticBarrier_03_f",0,0,0],
-	["xCam_pflaster_platten_3m_ecke_f",0,0,0],
-	["xCam_pflaster_platten_3m_F",0,0,0],
 	["TargetP_inf4_acc2_F",0,0,0]
 ];
 
 support_vehicles = [
-	[Arsenal_typename,250,250,0],
+	[Arsenal_typename,300,300,0],
 	/*[Respawn_truck_typename,200,0,100], 			ersetzt- Arsenalkiste als mobiles Arsenal und Respawn definiert- siehe "Support classnames" */
-	[FOB_box_typename,300,500,0],
-	[FOB_truck_typename,300,500,75],
+	[FOB_box_typename,500,500,0],
+	[FOB_truck_typename,500,500,75],
 	[KP_liberation_small_storage_building,0,0,0],
 	[KP_liberation_large_storage_building,0,0,0],
 	[KP_liberation_recycle_building,250,0,0],
@@ -470,18 +458,18 @@ opfor_battlegroup_vehicles = [
 	"RHS_Mi8mt_Cargo_vvsc",	
 	"rhs_mi28n_vvsc",
 	"RHS_Su25SM_vvsc",
-	"RHS_Ka52_vvsc"														//Ka-52
+	"RHS_Ka52_vvsc"													//Ka-52
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).
 opfor_battlegroup_vehicles_low_intensity = [
-	"rhs_tigr_msv",														//GAZ-233011
-	"rhs_tigr_sts_msv",													//GAZ-233014 (Armed)
-	"rhs_tigr_sts_msv",													//GAZ-233014 (Armed)
+	"rhs_tigr_msv",													//GAZ-233011
+	"rhs_tigr_sts_msv",												//GAZ-233014 (Armed)
+	"rhs_tigr_sts_msv",												//GAZ-233014 (Armed)
 	"RHS_Ural_Open_MSV_01",												//Ural-4320 Transport
-	"rhs_btr80_msv",													//BTR-80
-	"rhs_btr80a_msv",													//BTR-80A
-	"rhs_zsu234_aa",													//ZSU-23-4V
+	"rhs_btr80_msv",												//BTR-80
+	"rhs_btr80a_msv",												//BTR-80A
+	"rhs_zsu234_aa",												//ZSU-23-4V
 	"RHS_Mi24P_AT_vvsc",												//Mi-24P (AT)
 	"RHS_Mi24V_AT_vvsc",												//Mi-24V (AT)
 	"RHS_Mi8mt_Cargo_vvsc"												//Mi-8MT (Cargo)
@@ -491,13 +479,13 @@ opfor_battlegroup_vehicles_low_intensity = [
 If something in this array can't hold all 8 soldiers then buggy behaviours may occur.	*/
 opfor_troup_transports = [
 	"RHS_Ural_Open_MSV_01",												//Ural-4320 Transport
-	"RHS_Ural_MSV_01",													//Ural-4320 Transport (Covered)
-	"rhs_btr80_msv",													//BTR-80
-	"rhs_btr80a_msv",													//BTR-80A
-	"rhs_bmp2d_msv",													//BMP-2D
+	"RHS_Ural_MSV_01",												//Ural-4320 Transport (Covered)
+	"rhs_btr80_msv",												//BTR-80
+	"rhs_btr80a_msv",												//BTR-80A
+	"rhs_bmp2d_msv",												//BMP-2D
 	"RHS_Mi8mt_Cargo_vvsc",												//Mi-8MT (Cargo)
 	"RHS_Mi24P_AT_vvsc",												//Mi-24P (AT)
-	"RHS_Mi24V_AT_vvsc"													//Mi-24V (AT)
+	"RHS_Mi24V_AT_vvsc"												//Mi-24V (AT)
 ];
 
 // Enemy rotary-wings that will need to spawn in flight.
@@ -506,12 +494,12 @@ opfor_choppers = [
 	"RHS_Mi24P_AT_vvsc",												//Mi-24P (AT)
 	"RHS_Mi24V_AT_vvsc",												//Mi-24V (AT)
 	"rhs_mi28n_vvsc",
-	"RHS_Ka52_vvsc"														//Ka-52
+	"RHS_Ka52_vvsc"													//Ka-52
 ];
 
 // Enemy fixed-wings that will need to spawn in the air.
 opfor_air = [
-	"RHS_Su25SM_vvsc",													//Su-25
+	"RHS_Su25SM_vvsc",												//Su-25
 	"RHS_Su25SM_KH29_vvsc"												//Su-25 (KH29)
 ];
 
@@ -550,25 +538,28 @@ civilian_vehicles = [
 
 // Elite vehicles that should be unlocked through military base capture.
 elite_vehicles = [
-	"rhsusf_mkvsoc",													//Mk.V SOCOM
-	"rhsusf_m1a1aim_tuski_wd",											//M1A1SA (Tusk I)
-	"rhsusf_m1a2sep1tuskiiwd_usarmy",									//M1A2SEPv1 (Tusk II)
-	"BWA3_Leopard2A6M_Fleck",											//MBT Leopard 2A6M
-	"rhsusf_m109_usarmy",												//M109A6
-	"RHS_AH64D_wd",														//AH-64D (Multi-Role)
-	"BWA3_Tiger_RMK_Universal",											//UH Tiger RMK (Universal)
-	"B_UAV_02_dynamicLoadout_F",										//MQ-4A Greyhawk
-	"B_T_UAV_03_dynamicLoadout_F",										//MQ-12 Falcon
-	"B_UAV_05_F",														//UCAV Sentinel
-	"RHS_A10",															//A-10A (CAS)
-	"FIR_F15C",															//F-15C Eagle
-	"FIR_F15D",															//F-15D Eagle
-	"FIR_F15E",															//F-15E Strike Eagle
-	"JS_JC_FA18E",														//F/A-18 E Super Hornet
-	"JS_JC_FA18F",														//F/A-18 F Super Hornet
-	"B_Plane_Fighter_01_F",												//F/A-181 Black Wasp II
-	"B_Plane_Fighter_01_Stealth_F",										//F/A-181 Black Wasp II (Stealth)
-	"B_T_VTOL_01_armed_F"												//V-44 X Blackfish (Armed)
+	"RHS_M2A3_BUSKIII_wd",										//M2A3 BUSKIII
+	"RHS_M6_wd",											//M2A6 AA
+	"rhsusf_m1a1aimwd_usarmy",									//M1A1SA (Tusk I)
+	"rhsusf_m1a2sep1tuskiiwd_usarmy",								//M1A2SEPv1 (Tusk II)
+	"BWA3_Leopard2A6M_Fleck",									//MBT Leopard 2A6M
+	"rhsusf_m109_usarmy",										//M109A6
+	"RHS_AH64D_wd",											//AH-64D (Multi-Role)
+	"BWA3_Tiger_RMK_Universal",									//UH Tiger RMK (Universal)
+	//"B_UAV_02_dynamicLoadout_F",									//MQ-4A Greyhawk
+	//"B_T_UAV_03_dynamicLoadout_F",								//MQ-12 Falcon
+	//"B_UAV_05_F",											//UCAV Sentinel
+	"RHS_A10",											//A-10A (CAS)
+	"rhsusf_f22",
+	"I_Plane_Fighter_04_F",
+	//"FIR_F15C",											//F-15C Eagle
+	//"FIR_F15D",											//F-15D Eagle
+	//"FIR_F15E",											//F-15E Strike Eagle
+	//"JS_JC_FA18E",										//F/A-18 E Super Hornet
+	//"JS_JC_FA18F",										//F/A-18 F Super Hornet
+	"B_Plane_Fighter_01_F",										//F/A-181 Black Wasp II
+	"B_Plane_Fighter_01_Stealth_F",									//F/A-181 Black Wasp II (Stealth)
+	//"B_T_VTOL_01_armed_F"										//V-44 X Blackfish (Armed)
 ];
 
 if (KP_liberation_debug) then {private _text = format ["[KP LIBERATION] [DEBUG] Unit preset %1 intitialized for: %2", KP_liberation_preset, debug_source];_text remoteExec ["diag_log",2];};
