@@ -105,7 +105,7 @@ heavy_vehicles = [
 
 air_vehicles = [
 	["NH_90_Black",250,0,250],									//NH 90 Black BW
-	["AW159_BW_Black_Unbewaffnet",225,0,225],							//Wildcat (Unarmed)
+	["UH1D_Transport",225,0,225],									//(Unarmed)
 	["AW159_BW_Black",225,200,225],									//Wildcat (Ground Suppression)
 	["BWA3_Tiger_RMK_Universal",750,750,250],							//UH Tiger RMK (Universal)
 	["RHS_MELB_MH6M",150,0,150],
