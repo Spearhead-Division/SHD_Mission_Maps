@@ -13,7 +13,7 @@ KP_liberation_medical_vehicles = [
 	"RHS_UH60M_MEV2_d",
 	"rhsusf_M1230a1_usarmy_d",
 	"rhsusf_M1230a1_usarmy_wd",
-	"rhsusf_m1085A1P2_B_WD_Medical_fmtv_usarmy",
+	"rhsusf_m1085A1P2_B_WD_Medical_fmtv_usarmy"
 ];
 
 // Classnames of ACE3 crates (which have to be in the unit preset as well).
