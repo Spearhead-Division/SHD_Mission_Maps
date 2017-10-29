@@ -46,7 +46,7 @@ class Params
 		title = $STR_PARAM_FOBS_COUNT;
 		values[] = {3,5,7,10,15,20,26};
 		texts[] = {3,5,7,10,15,20,26};
-		default = 10;
+		default = 5;
 	};
 	class MaxSquadSize {
 		title = $STR_PARAM_SQUAD_SIZE;
@@ -76,7 +76,7 @@ class Params
 		title = $STR_SHORTER_NIGHTS_PARAM;
 		values[] = {1,0};
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-		default = 0;
+		default = 1;
 	};
 	class Weather {
 		title = $STR_WEATHER_PARAM;
@@ -107,7 +107,7 @@ class Params
 		isGlobal = 1;
 		values[] = {-100,0,1};
 		texts[] = {$STR_A3_MissionDefault, $STR_A3_Disabled, $STR_A3_EnabledForAllPlayers};
-		default = 1;
+		default = 0;
 		function = "bis_fnc_paramReviveMode";
 	};
 	class ReviveDuration {
@@ -182,7 +182,7 @@ class Params
 		title = $STR_PARAMS_ACE_ENABLE;
 		values[] = { 0, 1 };
 		texts[] = { $STR_PARAMS_DISABLED, $STR_PARAMS_ENABLED };
-		default = 0;
+		default = 1;
 	};
 	class Fatigue {
 		title = $STR_PARAMS_FATIGUE;
@@ -212,7 +212,7 @@ class Params
 		title = $STR_PARAM_RESPAWN_COOLDOWN;
 		values[] = {0, 300, 600, 900, 1200, 1800, 3600};
 		texts[] = {$STR_PARAMS_DISABLED, 5, 10, 15, 20, 30, 60};
-		default = 900;
+		default = 300;
 	};
 	class MobileArsenal {
 		title = $STR_PARAMS_MOBILEARSENAL;
@@ -237,7 +237,7 @@ class Params
 		title = $STR_PARAM_TEAMKILL_PENALTY;
 		values[] = {1,0};
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-		default = 0;
+		default = 1;
 	};
 	class CR_Building {
 		title = $STR_PARAM_CR_BUILDING;
@@ -279,19 +279,19 @@ class Params
 		title = $STR_PARAMS_INTRO;
 		values[] = { 1, 0 };
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-		default = 1;
+		default = 0;
 	};
 	class DeploymentCinematic {
 		title = $STR_PARAMS_DEPLOYMENTCAMERA;
 		values[] = { 1, 0 };
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-		default = 1;
+		default = 0;
 	};
 	class Whitelist {
 		title = $STR_WHITELIST_PARAM;
 		values[] = { 1, 0 };
 		texts[] = { $STR_WHITELIST_ENABLED, $STR_PARAMS_DISABLED };
-		default = 0;
+		default = 1;
 	};
 	class ServerRestart {
 		title = $STR_RESTART_PARAM;

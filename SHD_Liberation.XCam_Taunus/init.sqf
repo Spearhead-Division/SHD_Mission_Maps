@@ -20,6 +20,12 @@ if (!isDedicated && !hasInterface && isMultiplayer) then {
 	[] spawn compileFinal preprocessFileLineNumbers "scripts\server\offloading\hc_manager.sqf";
 };
 
+//ADV_aceCPR
+adv_aceCPR_onlyDoctors = 0;
+adv_aceCPR_probabilities = [50,25,5,85];
+adv_aceCPR_diag = false;
+
+
 if (!isDedicated && hasInterface) then {
 	waitUntil {alive player};
 	if (debug_source != name player) then {debug_source = name player};
