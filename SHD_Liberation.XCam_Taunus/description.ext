@@ -6,9 +6,9 @@ disabledAI = true;
 enableDebugConsole = 1;
 allowFunctionsLog = 0;
 
-loadScreen="res\loadescreen.jpg";
-onLoadMission = "Willkommen auf dem Spearheads Division Server. Die Mods findet Ihr auf unsere Webseite: www.Spearheads-Division.clans.de";
-author = "[GREUH] Zbug, [GREUH] McKeewa, [KP] Wyqer and edit by [SHD]";
+loadScreen="res\liberation.jpg";
+onLoadMission = "www.killahpotatoes.de";
+author = "[GREUH] Zbug, [GREUH] McKeewa, [KP] Wyqer";
 onLoadName = $STR_MISSION_TITLE;
 
 joinUnassigned = 1;

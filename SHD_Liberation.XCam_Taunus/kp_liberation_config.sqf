@@ -9,10 +9,9 @@ KP_liberation_medical_vehicles = [
 	"rhsusf_m113_usarmy_medical",
 	"rhsusf_m113d_usarmy_medical",
 	"RHS_UH60M_MEV2",
-	"rhsusf_m1230a1_usarmy_wd",
-	"rhsusf_m1085A1P2_B_WD_Medical_fmtv_usarmy",
-	"RHS_UH60M_MEV",
-	"RHS_UH60M_MEV2_d"
+	"RHS_UH60M_MEV2_d",
+	"rhsusf_M1230a1_usarmy_d",
+	"rhsusf_M1230a1_usarmy_wd"
 ];
 
 // Classnames of ACE3 crates (which have to be in the unit preset as well).
@@ -23,15 +22,36 @@ KP_liberation_ace_crates = [
 	"ACE_medicalSupplyCrate_advanced"
 ];
 
-/* - Custom unit and arsenal preset settings.
-Which units preset should be used?
-0 = Default vanilla with RHS USAF and BWMod, both optional (edit the custom.sqf in the presets\ folder to change things for your own versions and tweaks).
-1 = Apex vanilla with RHS USAF and BWMod, both optional (edit the apex_tanoa.sqf in the presets\ folder to change things for your own versions and tweaks).
-2 = RHS USAF and RHS AFRF.
-3 = RHS USAF, RHS AFRF and BWMod.
-4 = RHS USAF, RHS AFRF and Project OPFOR (Takistan)
-5 = 3cbBAF, RHS USAF and RHS AFRF. */
-KP_liberation_preset = 0;
+/* - Custom unit and arsenal preset settings. 
+If you want to change a preset, it's recommended to set all four presets to 0 and edit the appropriate custom.sqf files in the preset folders.*/
+
+/* BLUFOR preset:
+0 = custom (default vanilla with many optional mods supported)
+1 = 3cb BAF
+2 = Apex Tanoa
+3 = BWMod (German Bundeswehr)
+4 = RHS USAF woodland
+5 = RHS USAF desert */
+KP_liberation_preset_blufor = 3;
+
+/* OPFOR preset:
+0 = custom (default vanilla CSAT)
+1 = Apex Tanoa
+2 = Project OPFOR (Takistan)
+3 = RHS AFRF */
+KP_liberation_preset_opfor = 3;
+
+/* Resistance preset:
+0 = custom (default vanilla)
+1 = Apex Tanoa 
+2 = RHS GREF */
+KP_liberation_preset_resistance = 0;
+
+/* Civilians preset:
+0 = custom (default vanilla)
+1 = Apex Tanoa
+2 = Project OPFOR (Takistan) */
+KP_liberation_preset_civilians = 0;
 
 /* Which arsenal preset should be used?
 0 = Use the default blacklist method (defined below).
@@ -47,15 +67,13 @@ KP_liberation_arsenal = 0;
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine.	*/
 KP_liberation_fuel_neutral = 180;
 // Time in minutes till a full tank depletes whilst the vehicle is driving below max speed.
-KP_liberation_fuel_normal = 75;
+KP_liberation_fuel_normal = 90;
 // Time in minutes till a full tank depletes whilst the vehicle is driving at max speed.
-KP_liberation_fuel_max = 40;
+KP_liberation_fuel_max = 45;
 
 /* - Gameplay constant settings.
 Name of the savegame namespace inside of the [ServerProfileName].vars.Arma3Profile file.	*/
 GRLIB_save_key = "KP_LIBERATION_" + (toUpper worldName) + "_SAVEGAME";
-
-KP_liberation_savegame_debug = false;																			// Enables displaying of the whole save array in the server log on each save
 
 GRLIB_side_friendly = WEST;																						// Friendly side.
 GRLIB_side_enemy = EAST;																						// Enemy side.
@@ -72,7 +90,7 @@ GRLIB_halo_altitude = 2500;																						// Altitude in metres for the H
 GRLIB_secondary_missions_costs = [15, 10, 8];																	// Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
 GRLIB_secondary_objective_impact = 0.6;																			// The percentage impact against enemy combat readiness for a successful FOB hunt.
 GRLIB_recycling_percentage = 0.5;																				// Percentage of resources you get back from recycling.
-KP_liberation_production_interval = 45				/ GRLIB_resources_multiplier;								// Time in minutes until a production process is finished, when resources multiplier is set to 1.
+KP_liberation_production_interval = 30				/ GRLIB_resources_multiplier;								// Time in minutes until a production process is finished, when resources multiplier is set to 1.
 
 GRLIB_sector_size = 1000;																						// Range to activate a sector.
 GRLIB_capture_size = 175;																						// Range to capture a sector.
@@ -89,6 +107,31 @@ GRLIB_blufor_cap = 100								* GRLIB_unitcap;											// Cap for BLUFOR.
 GRLIB_sector_cap = 180								* GRLIB_unitcap;											// Cap for sector defenders.
 GRLIB_battlegroup_cap = 150							* GRLIB_unitcap;											// Cap for enemy battlegroups.
 GRLIB_patrol_cap = 150								* GRLIB_unitcap;											// Cap for enemy patrols.
+
+KP_liberation_cr_kill_penalty = 5;																				// Civil Reputation penalty for killing a civilian.
+KP_liberation_cr_building_penalty = 3;																			// Civil Reputation penalty for destroying/damaging a building.
+KP_liberation_cr_vehicle_penalty = 2;																			// Civil Reputation penalty for stealing a civilian vehicle.
+KP_liberation_cr_resistance_penalty = 3;																		// Civil Reputation penalty for killing a friendly resistance soldier.
+KP_liberation_cr_sector_gain = 5;																				// Civil Reputation gain for liberate a sector.
+KP_liberation_cr_wounded_chance = 35;																			// Chance (0-100) that there are wounded civilians right after capturing a sector.
+KP_liberation_cr_wounded_gain = 2;																				// Civil Reputation gain for providing medical assistance for wounded civilians.
+
+KP_liberation_civinfo_min = 5400;																				// Civil Informant minimum spawn time. (seconds)
+KP_liberation_civinfo_max = 10800;																				// Civil Informant maximum spawn time. (seconds)
+KP_liberation_civinfo_chance = 75;																				// Civil Informant spawn chance. (0-100)
+KP_liberation_civinfo_intel = 5;																				// Civil Informant intel amount.
+KP_liberation_civinfo_duration = 1200;																			// Civil Informant staytime until despawning. (seconds)
+KP_liberation_civinfo_task_chance = 40;																			// Chance (0-100) that the delivered informant will spawn a time critical task.
+KP_liberation_civinfo_task_duration = 900;																		// Duration until the task will despawn if no player is near. (seconds)
+
+KP_liberation_convoy_ambush_chance = 5;																			// Chance that a logistic convoy will be ambushed, when civil reputation is low.
+KP_liberation_convoy_ambush_duration = 1200;																	// Duration of the convoy ambush event. (seconds)
+
+KP_liberation_resistance_tier2 = 30;																			// At which strength (0-100) the guerilla forces will be at tier 2?
+KP_liberation_resistance_tier3 = 70;																			// At which strength (0-100) the guerilla forces will be at tier 3?
+KP_liberation_resistance_at_chance = 20;																		// Chance that a guerilla unit has a RPG. (tier 2 and 3)
+KP_liberation_resistance_sector_chance = 35;																	// Chance that a guerilla squad will join an ongoing sector attack.
+KP_liberation_resistance_ambush_chance = 30;																	// Chance that some guerilla units will spawn in blufor sectors for an ambush, if reputation is low.
 
 /* - Default arsenal blacklist method.
 Useless if you're using anything other than "kp_liberation_arsenal = 0;" above. A whitelisted arsenal is always more performance friendly then a blacklisted arsenal.	
@@ -164,232 +207,21 @@ blacklisted_from_arsenal = [
 	"RHS_NSV_Gun_Bag",
 	"RHS_SPG9_Gun_Bag",
 	"RHS_SPG9_Tripod_Bag",
+	"I_UAV_06_backpack_F",
+	"O_UAV_06_backpack_F",
+	"B_UAV_06_backpack_F",
+	"I_UAV_06_medical_backpack_F",
+	"O_UAV_06_medical_backpack_F",
+	"C_IDAP_UAV_06_medical_backpack_F",
+	"B_UAV_06_medical_backpack_F",
+	"C_IDAP_UAV_06_antimine_backpack_F",
+	"C_UAV_06_backpack_F",
+	"C_IDAP_UAV_06_backpack_F",
+	"C_UAV_06_medical_backpack_F",
+	"C_IDAP_UAV_01_backpack_F",
 	"optic_Nightstalker",
 	"optic_tws",
-	"optic_tws_mg",
-	"Redd_Milan_Static_Bag",
-	"Redd_Milan_Static_Tripod",
-/*Wärmebild Optiks*/
-	"NVGogglesB_grn_F",
-	"NVGogglesB_blk_F",
-	"NVGogglesB_gry_F",
-	"optic_Nightstalker",
-	"rhsusf_acc_anpas13gv1",
-/*RHS Russen Uniform*/
-	"rhs_uniform_df15",
-        "rhs_uniform_df15_tan",
-	"rhs_uniform_vdv_emr_des",
-	"rhs_uniform_emr_patchless",
-	"rhs_uniform_msv_emr",
-	"rhs_uniform_vdv_emr",
-	"rhs_uniform_rva_flora",
-	"rhs_uniform_vmf_flora",
-	"rhs_uniform_vmf_flora_subdued",
-	"rhs_uniform_flora_patchless",
-	"rhs_uniform_flora_patchless_alt",
-	"rhs_uniform_flora",
-	"rhs_uniform_vdv_flora",
-	"rhs_uniform_gorka_r_g",
-	"rhs_uniform_gorka_r_y",
-	"rhs_chdkz_uniform_5",
-	"rhs_chdkz_uniform_4",
-	"rhs_chdkz_uniform_3",
-	"rhs_chdkz_uniform_2",
-	"rhs_chdkz_uniform_1",
-	"rhs_uniform_mvd_izlom",
-	"rhs_uniform_mflora_patchless",
-	"rhs_uniform_vdv_mflora",
-	"rhs_uniform_m88_patchless",
-	"rhs_uniform_emr_des_patchless",
-/*RHS Russen Westen*/
-		"rhs_6b13_Flora",
-                "rhs_6b13_Flora_6sh92",
-                "rhs_6b13_Flora_6sh92_headset_mapcase",
-                "rhs_6b13_Flora_6sh92_radio",
-                "rhs_6b13_Flora_6sh92_vog",
-                "rhs_6b13_Flora_crewofficer",
-                "rhs_6b13_EMR_6sh92",
-                "rhs_6b13_EMR_6sh92_radio",
-                "rhs_6b13_EMR_6sh92_vog",
-                "rhs_6b13_EMR_6sh92_headset_mapcase",
-                "rhs_6b13_EMR",
-                "rhs_6b13",
-                "rhs_6b13_6sh92",
-                "rhs_6b13_6sh92_headset_mapcase",
-                "rhs_6b13_6sh92_radio",
-                "rhs_6b13_6sh92_vog",
-                "rhs_6b13_crewofficer",
-                "rhs_6b23",
-                "rhs_6b23_6sh116_od",
-                "rhs_6b23_6sh116_vog_od",
-                "rhs_6b23_6sh92",
-                "rhs_6b23_6sh92_headset",
-                "rhs_6b23_6sh92_headset_mapcase",
-                "rhs_6b23_6sh92_radio",
-                "rhs_6b23_6sh92_vog",
-                "rhs_6b23_6sh92_vog_headset",
-                "rhs_6b23_crewofficer",
-                "rhs_6b23_crew",
-                "rhs_6b23_engineer",
-                "rhs_6b23_medic",
-                "rhs_6b23_rifleman",
-                "rhs_6b23_sniper",
-                "rhs_6b23_vydra_3m",
-                "rhs_6b23_digi",
-                "rhs_6b23_6sh116",
-                "rhs_6b23_6sh116_vog",
-                "rhs_6b23_digi_6sh92",
-                "rhs_6b23_digi_6sh92_headset",
-                "rhs_6b23_digi_6sh92_headset_spetsnaz",
-                "rhs_6b23_digi_6sh92_headset_mapcase",
-                "rhs_6b23_digi_6sh92_radio",
-                "rhs_6b23_digi_6sh92_Spetsnaz",
-                "rhs_6b23_digi_6sh92_vog",
-                "rhs_6b23_digi_6sh92_vog_headset",
-                "rhs_6b23_digi_6sh92_Vog_Radio_Spetsnaz",
-                "rhs_6b23_digi_crewofficer",
-                "rhs_6b23_digi_crew",
-                "rhs_6b23_digi_engineer",
-                "rhs_6b23_digi_medic",
-                "rhs_6b23_digi_rifleman",
-                "rhs_6b23_digi_sniper",
-                "rhs_6b23_digi_vydra_3m",
-                "rhs_6b23_6sh116_flora",
-                "rhs_6b23_6sh116_vog_flora",
-		"rhs_6b23_ML",
-                "rhs_6b23_ML_6sh92",
-                "rhs_6b23_ML_6sh92_headset",
-                "rhs_6b23_ML_6sh92_headset_mapcase",
-                "rhs_6b23_ML_6sh92_radio",
-                "rhs_6b23_ML_6sh92_vog",
-                "rhs_6b23_ML_6sh92_vog_headset",
-                "rhs_6b23_ML_crewofficer",
-                "rhs_6b23_ML_crew",
-                "rhs_6b23_ML_engineer",
-                "rhs_6b23_ML_medic",
-                "rhs_6b23_ML_rifleman",
-                "rhs_6b23_ML_sniper",
-                "rhs_6b23_ML_vydra_3m",
-                "rhs_vydra_3m",
-		"rhs_6sh46",
-                "rhs_6sh92",
-                "rhs_6sh92_headset",
-                "rhs_6sh92_radio",
-                "rhs_6sh92_vog",
-                "rhs_6sh92_vog_headset",
-                "rhs_6sh92_digi",
-                "rhs_6sh92_digi_headset",
-                "rhs_6sh92_digi_radio",
-                "rhs_6sh92_digi_vog",
-                "rhs_6sh92_digi_vog_headset",
-		"rhs_vest_commander",
-                "rhs_vest_pistol_holster",
-	  	"rhs_6sh92_vsr",
-		"rhs_6sh92_vsr_radio",
-		"rhs_6sh92_vsr_headset",
-		"rhs_6sh92_vsr_vog",
-		"rhs_6sh92_vsr_vog_headset",
-		"rhs_6b43",
-		"rhs_6b23_digi_6sh92_vog_spetsnaz",
-		"rhs_6b23_digi_6sh92_spetsnaz2",
-		"rhs_6b23_digi_6sh92_Vog_Spetsnaz",
-/*RHS Russen Helme*/
-		"rhs_6b26_green",
-                "rhs_6b26_bala_green",
-                "rhs_6b26_ess_green",
-                "rhs_6b26_ess_bala_green",
-                "rhs_6b26",
-                "rhs_6b26_bala",
-                "rhs_6b26_ess",
-                "rhs_6b26_ess_bala",
-                "rhs_6b27m_green",
-                "rhs_6b27m_green_bala",
-                "rhs_6b27m_green_ess",
-                "rhs_6b27m_green_ess_bala",
-                "rhs_6b27m_digi",
-                "rhs_6b27m_digi_bala",
-                "rhs_6b27m_digi_ess",
-                "rhs_6b27m_digi_ess_bala",
-                "rhs_6b27m",
-                "rhs_6b27m_bala",
-                "rhs_6b27m_ess",
-                "rhs_6b27m_ess_bala",
-                "rhs_6b27m_ml",
-                "rhs_6b27m_ml_bala",
-                "rhs_6b27m_ml_ess",
-                "rhs_6b27m_ML_ess_bala",
-                "rhs_6b28_green",
-                "rhs_6b28_green_bala",
-                "rhs_6b28_green_ess",
-                "rhs_6b28_green_ess_bala",
-                "rhs_6b28",
-                "rhs_6b28_bala",
-                "rhs_6b28_ess",
-                "rhs_6b28_ess_bala",
-                "rhs_6b28_flora",
-                "rhs_6b28_flora_bala",
-                "rhs_6b28_flora_ess",
-                "rhs_6b28_flora_ess_bala",
-                "rhs_6b47",
-                "rhs_6b47_bala",
-                "rhs_6b47_ess",
-                "rhs_6b47_ess_bala",
-                "rhs_6b7_1m",
-                "rhs_6b7_1m_bala1",
-                "rhs_6b7_1m_bala2",
-                "rhs_6b7_1m_emr",
-                "rhs_6b7_1m_bala1_emr",
-                "rhs_6b7_1m_bala2_emr",
-                "rhs_6b7_1m_emr_ess",
-                "rhs_6b7_1m_emr_ess_bala",
-                "rhs_6b7_1m_ess",
-                "rhs_6b7_1m_ess_bala",
-                "rhs_6b7_1m_flora",
-                "rhs_6b7_1m_bala2_flora",
-                "rhs_6b7_1m_bala1_flora",
-                "rhs_6b7_1m_flora_ns3",
-                "rhs_6b7_1m_olive",
-                "rhs_6b7_1m_bala1_olive",
-                "rhs_6b7_1m_bala2_olive",
-		"rhs_tsh4",
-                "rhs_tsh4_bala",
-                "rhs_tsh4_ess",
-                "rhs_tsh4_ess_bala",
-                "rhsgref_un_beret",
-                "rhs_8point_marpatd",
-                "rhs_8point_marpatwd",
-                "rhs_zsh12",
-                "rhs_zsh12_bala",
-                "rhs_zsh12_black",
-                "rhs_zsh7a_mike_green_alt",
-                "rhs_zsh7a_mike_alt",
-                "rhs_zsh7a_mike_green",
-                "rhs_zsh7a_mike",
-                "rhs_zsh7a",
-                "rhs_zsh7a_alt",
-		"rhs_fieldcap",
-                "rhs_fieldcap_helm_digi",
-                "rhs_fieldcap_helm_ml",
-                "rhs_fieldcap_helm",
-                "rhs_fieldcap_digi",
-                "rhs_fieldcap_digi2",
-                "rhs_fieldcap_ml",
-                "rhs_fieldcap_khk",
-                "rhs_fieldcap_vsr",
-		"rhs_altyn_novisor",
-		"rhs_altyn_novisor_bala",
-		"rhs_altyn_novisor_ess",
-		"rhs_altyn_novisor_ess_bala",
-		"rhs_altyn_visordown",
-		"rhs_altyn",
-		"rhs_altyn_bala",
-		"rhs_ssh68",
-/*RHS Russen Rucksäcke*/
-		"rhs_rpg_empty",
-                "rhs_sidor",
-                "rhs_assault_umbts",
-                "rhs_assault_umbts_engineer_empty"
-		
+	"optic_tws_mg"
 ];
 
 // Items which should be added as allowed Items, when they get blacklisted, even if they are not in the blacklisted_from_arsenal array
@@ -400,14 +232,23 @@ KP_liberation_allowed_items_extension = [
 	"rhs_weap_M136_used",
 	"rhs_m136_mag",
 	"rhs_m136_hedp_mag",
-	"rhs_m136_hp_mag"
+	"rhs_m136_hp_mag",
+	"BWA3_optic_ZO4x30_NSV",
+	"BWA3_optic_ZO4x30_IRV",
+	"BWA3_optic_ZO4x30_Single_NSV",
+	"BWA3_optic_ZO4x30_Single_IRV",
+	"BWA3_optic_EOTech_Mag_On",
+    "BWA3_optic_EOTech_Mag_Off",
+    "BWA3_optic_EOTech_tan_Mag_On",
+    "BWA3_optic_EOTech_tan_Mag_Off",
+    "BWA3_optic_20x50_NSV",
+    "BWA3_optic_24x72_NSV",
+	"ACE_ReserveParachute"
 ];
 
 /* - Configuration settings for crates transported by vehicles.
 Format = ["classname", distance behind vehicle to unload crate, attachTo positions for each box],	*/
 box_transport_config = [
-	["BW_LKW_Transport_offen_fleck", -6.5, [0,-1.1,0.25], [0,-2.6,0.25],[0,-4.1,0.25]],
-	["BW_LKW_Transport_Fleck", -6.5, [0,-1.1,0.25], [0,-2.6,0.25],[0,-4.1,0.25]],
 	["C_Offroad_01_F", -6.5, [0,-1.7,0.4]],
 	["I_G_Offroad_01_F", -6.5, [0,-1.7,0.4]],
 	["O_G_Offroad_01_F", -6.5, [0,-1.7,0.4]],
@@ -419,6 +260,8 @@ box_transport_config = [
 	["C_Truck_02_covered_F", -6.5, [0,0.3,0.05], [0,-1.3,0.05], [0,-2.9,0.05]],
 	["RHS_Ural_Open_Civ_03", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
 	["RHS_Ural_Civ_03", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
+	["RHS_Ural_Open_MSV_01", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
+	["RHS_Ural_MSV_01", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
 	["LOP_TAK_Civ_Ural_open", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
 	["LOP_TAK_Civ_Ural", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
 	["B_Truck_01_transport_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
@@ -430,6 +273,7 @@ box_transport_config = [
 	["rhsusf_M977A4_BKIT_usarmy_wd", -6.5, [0,0.4,1.4], [0,-1.3,1.4], [0,-3,1.4]],
 	["rhsusf_M977A4_BKIT_M2_usarmy_wd", -6.5, [0,0.4,0.7], [0,-1.3,0.7], [0,-3,0.7]],
 	["I_Heli_Transport_02_F", -6.5, [0,4.2,-1.45], [0,2.5,-1.45], [0,0.8,-1.45], [0,-0.9,-1.45]],
+	["BW_AW101_Trans_Heer_F", -6.5, [0,4.2,-1.45], [0,2.5,-1.45], [0,0.8,-1.45], [0,-0.9,-1.45]],
 	["B_Heli_Transport_03_F", -7.5, [0,2.2,-1], [0,0.5,-1], [0,-1.2,-1]],
 	["B_Heli_Transport_03_unarmed_F", -7.5, [0,2.2,-1], [0,0.5,-1], [0,-1.2,-1]],
 	["B_T_VTOL_01_infantry_F", -7.5,[0,4.7,-4.88],[0,3,-4.88],[0,1.3,-4.88],[0,-0.4,-4.88],[0,-2.1,-4.88]],
@@ -441,6 +285,7 @@ box_transport_config = [
 	["UK3CB_BAF_Merlin_HC3_32_MTP", -7.5, [0.25,3.7,-1.5], [0.25,1.6,-1.5], [0.25,-0.4,-1.5]],
 	["UK3CB_BAF_Merlin_HC3_CSAR_MTP", -7.5, [0.25,3.7,-1.5], [0.25,1.6,-1.5], [0.25,-0.4,-1.5]],
 	["O_Truck_03_transport_F", -6.5, [0,-0.8,0.4], [0,-2.4,0.4], [0,-4.0,0.4]],
+	["BW_LKW7T_Trans_F", -6.5, [0,-0.8,0.4], [0,-2.4,0.4], [0,-4.0,0.4]],
 	["O_Truck_03_covered_F", -6.5, [0,-0.8,0.4], [0,-2.4,0.4], [0,-4.0,0.4]],
 	["O_T_Truck_03_transport_ghex_F", -6.5, [0,-0.8,0.4], [0,-2.4,0.4], [0,-4.0,0.4]],
 	["O_T_Truck_03_covered_ghex_F", -6.5, [0,-0.8,0.4], [0,-2.4,0.4], [0,-4.0,0.4]],
@@ -475,7 +320,9 @@ ai_resupply_sources = [
 	"rhsusf_M977A4_AMMO_BKIT_usarmy_d",
 	"rhsusf_M977A4_AMMO_BKIT_usarmy_wd",
 	"rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d",
-	"rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd"
+	"rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd",
+	"BW_LKW15T_Ammo_F",
+	"rhs_gaz66_ammo_msv"
 ];
 
 // Everything that can resupply other vehicles.
@@ -491,7 +338,8 @@ vehicle_repair_sources = [
 	"rhsusf_M977A4_REPAIR_BKIT_usarmy_d",
 	"rhsusf_M977A4_REPAIR_BKIT_usarmy_wd",
 	"rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d",
-	"rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_wd"
+	"rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_wd",
+	"BW_LKW15T_Repair_F"
 ];
 
 vehicle_rearm_sources = [
@@ -505,7 +353,8 @@ vehicle_rearm_sources = [
 	"rhsusf_M977A4_AMMO_BKIT_usarmy_d",
 	"rhsusf_M977A4_AMMO_BKIT_usarmy_wd",
 	"rhsusf_M977A4_AMMO_BKIT_M2_usarmy_d",
-	"rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd"
+	"rhsusf_M977A4_AMMO_BKIT_M2_usarmy_wd",
+	"BW_LKW15T_Ammo_F"
 ];
 
 vehicle_refuel_sources = [
@@ -519,8 +368,26 @@ vehicle_refuel_sources = [
 	"rhsusf_M978A4_usarmy_d",
 	"rhsusf_M978A4_usarmy_wd",
 	"rhsusf_M978A4_BKIT_usarmy_d",
-	"rhsusf_M978A4_BKIT_usarmy_wd"
+	"rhsusf_M978A4_BKIT_usarmy_wd",
+	"BW_LKW15T_Fuel_F"
 ];
+
+// Classnames of artillery vehicles or statics which should be linked to the support system. (Currently deactivated)
+/*KP_liberation_artySupp = [
+	"B_Mortar_01_F",
+	"B_T_Mortar_01_F",
+	"B_MBT_01_arty_F",
+	"B_T_MBT_01_arty_F",
+	"B_MBT_01_mlrs_F",
+	"B_T_MBT_01_mlrs_F",
+	"rhsusf_m109_usarmy",
+	"rhsusf_m109d_usarmy",
+	"RHS_M252_WD",
+	"RHS_M252_D",
+	"RHS_M119_WD",
+	"RHS_M119_D",
+	"UK3CB_BAF_Static_L16_Deployed_MTP"
+];*/
 
 // Classnames of boats, so they can be built on water.
 boats_names = [
@@ -596,11 +463,32 @@ KP_liberation_small_storage_positions = [
 	[2.4502,-1.79883,0.6]
 ];
 
+// Building classnames which should be ignored for the destroyed/damaged buildings check for the civil reputation
+KP_liberation_cr_ignored_buildings = [
+	"Land_LampStreet_small_F",
+	"Land_PowerPoleWooden_L_F",
+	"Land_LampShabby_F",
+	"Land_SlideCastle_F",
+	"Land_Carousel_01_F",
+	"Land_LampDecor_F",
+	"Land_LampStreet_F",
+	"Land_LampHalogen_F",
+	"Land_LampSolar_F",
+	"Land_LampHarbour_F",
+	"Land_HighVoltageColumnWire_F",
+	"Land_HighVoltageColumn_F",
+	"Land_fs_feed_F",
+	"Land_PowerWireBig_left_F",
+	"Land_runway_edgelight_blue_F",
+	"Land_LampAirport_off_F",
+	"Land_Flush_Light_green_F",
+	"Land_LampAirport_F",
+	"Land_PierLadder_F"
+];
+
 // DO NOT CHANGE (unless you know what you are doing).
 GRLIB_endgame = 0;
 if ( GRLIB_blufor_cap > 100 ) then { GRLIB_blufor_cap = 100 };
 GRLIB_offload_diag = false;
 
 KP_liberation_production_interval = ceil KP_liberation_production_interval;
-
-if (KP_liberation_debug) then {private _text = format ["[KP LIBERATION] [DEBUG] config loaded for: %1", debug_source];_text remoteExec ["diag_log",2];};
